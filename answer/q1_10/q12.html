@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제12 : 게임 캐릭터 클래스 만들기</h3>
+        <p class="sub_text">다음 소스코드에서 클래스를 작서앟여 게임 캐릭터의 능력치와 '파이어볼'이 출력되게 만드세요. (주어진 코드를 수저애선 안됩니다.)</p>
+        <xmp>
+            // 답영역
+            class Wizard {
+                constructor(health, mana, armor) {
+                    this.health = health;
+                    this.mana = mana;
+                    this.armor = armor;
+                }
+                attack(){
+                    console.log('파이어볼')
+                }
+            };
+            
+            // 문제영역
+            const x = new Wizard(545, 210, 10);
+            console.log(x.health, x.mana, x.armor);
+            x.attack();
+        </xmp>
+    </div>
+</body>
+<script>
+    class Wizard {
+        constructor(health, mana, armor) {
+            this.health = health;
+            this.mana = mana;
+            this.armor = armor;
+        }
+        attack(){
+            console.log('파이어볼')
+        }
+    };
+
+    const x = new Wizard(545, 210, 10);
+    console.log(x.health, x.mana, x.armor);
+    x.attack();
+
+</script>
+</html>
