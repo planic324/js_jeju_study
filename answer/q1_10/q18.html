@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제18 : 평균점수 구하기</h3>
+        <p class="sub_text">
+            시험 평균 점수를 구해라
+            입력 : 20, 30, 40
+        </p>
+        <xmp>
+            var arr = Array(20, 30, 40);
+            var result = arr.reduce(function add(sum, currValue){
+                return sum + currValue;
+            }, 0);
+            
+            var average = result / arr.length;
+            console.log(average);
+        </xmp>
+    </div>
+</body>
+<script>
+    var arr = Array(20, 30, 40);
+    var result = arr.reduce(function add(sum, currValue){
+        return sum + currValue;
+    }, 0);
+    
+    var average = result / arr.length;
+    console.log(average);
+    // https://cocobi.tistory.com/134
+</script>
+</html>
