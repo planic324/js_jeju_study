@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제19 : 몫과 나머지</h3>
+        <p class="sub_text">
+            공백으로 두 숫자가 주어집니다. 
+            <br>
+            두번째 숫자로 첫번째 숫자를 나누었을 때 그 몫과 나머지를 공백으로 구분하여 출력하세요.
+        </p>
+        <xmp>
+            var test = prompt('제곱할 수를 입력하시오.');
+            var test2 = prompt('제곱승을 입력하시오');
+
+            var result = Math.pow(test, test2)
+            console.log(result);
+        </xmp>
+    </div>
+</body>
+<script>
+    var test = prompt('나눌 값를 입력하시오');
+    var test2 = prompt('나눌 값을 나룰 수를 입력하시오.');
+
+    var result = parseInt(test / test2);
+    var resultDot = Math.round(test % test2);
+
+    document.write(test + '와' + test2 + '나눈 값의 몫은? ' + result + '이고, 나머지는? ' + resultDot + '이다.')
+</script>
+</html>
