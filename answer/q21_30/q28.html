@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제28 : 2-gram</h3>
+        <p class="sub_text">
+            2-gram이란 문자열에서 2개의 연속된 요소를 출력하는 방법입니다.<br>
+            예를 들어 'javascirpt'를 2-gram으로 반복해 본다면 다음과 같은 결과가 나옵니다.
+        </p>
+        <xmp>
+            
+        </xmp>
+    </div>
+</body>
+<script>
+    // 입력
+    // Javascript
+
+    // 출력
+    // {'yujin': 70, 'Hyeweon': 100}
+
+    let textInput = prompt('단어를 입력하세요');
+    
+    for(let i = 0; i < textInput.length - 1; i++){
+        console.log(textInput[i], textInput[i + 1]);
+    }
+
+
+</script>
+</html>
