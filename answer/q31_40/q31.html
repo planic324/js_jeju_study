@@ -14,11 +14,18 @@
             혜림이를 위해 문자열을 입력 받으면 단어의 갯수를 출력하는 프로그램을 작성해주세요.
         </p>
         <xmp>
-            var test = prompt('영어 이름을 입력하세요.');
+            // 입력
+            // 안녕하세요. 저는 제주대학교 컴퓨터공학전공 혜림입니다.
 
-            var upPerText = test.toLocaleUpperCase();
+            // 출력
+            // 5개
 
-            document.write(upPerText)
+            const inputText = prompt('문장을 입력하세요.');
+            const string = inputText;
+            const array = string.match(/ /g);
+            const count = array.length + 1;
+
+            console.log(count);
         </xmp>
     </div>
 </body>
