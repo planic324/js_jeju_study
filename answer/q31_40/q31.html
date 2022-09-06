@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제32 : 문자열 만들기</h3>
+        <p class="sub_text">
+            취업 준비생인 혜림이는 자기소개서를 쓰고 있습니다. 열심히 자기소개서를 작성하던 도중 혜림이는 자기가 지금까지 단어를 얼마나 적었는지 궁금하게 됩니다. 
+            혜림이를 위해 문자열을 입력 받으면 단어의 갯수를 출력하는 프로그램을 작성해주세요.
+        </p>
+        <xmp>
+            var test = prompt('영어 이름을 입력하세요.');
+
+            var upPerText = test.toLocaleUpperCase();
+
+            document.write(upPerText)
+        </xmp>
+    </div>
+</body>
+<script>
+    // 입력
+    // 안녕하세요. 저는 제주대학교 컴퓨터공학전공 혜림입니다.
+
+    // 출력
+    // 5개
+
+    const inputText = prompt('문장을 입력하세요.');
+    const string = inputText;
+    const array = string.match(/ /g);
+    const count = array.length + 1;
+
+    console.log(count);
+
+    
+
+</script>
+</html>
