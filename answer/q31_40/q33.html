@@ -8,33 +8,56 @@
 </head>
 <body>
     <div class="qustion_box">
-        <h3 class="main_text">문제32 : 문자열 만들기</h3>
+        <h3 class="main_text">문제34 : sort 구현하기</h3>
         <p class="sub_text">
-            한 줄에 여러개의 숫자가 입력되면, 역순으로 그 숫자들을 하나씩 출력하는 프로그램을 작성하시오.
+            민주는 체육부장으로 체육시간이 되면 반 친구들이 제로 키 순서대로 모였는지를 확인해야 한다. 
+            그런데 요즘 민는 그것이 너무 번거롭게 느껴져 한 번에 확인하고 싶어한다. 
+
+            민주를 위해 키가 주어지면 순서대로 제대로 섰는지 확인하는 프로그램을 작성해보자.
+            키는 공백으로 구분하여 입력됩니다. 
         </p>
         <xmp>
-            // 입력
-            // 12345
+            // 입력 : 176 156 155 165 166 169
+            // 출력 : NO
 
-            // 출력
-            // 54321
-
+            // 입력 : 155 156 165 166 169 176
+            // 출력 : YES
             
         </xmp>
     </div>
 </body>
 <script>
-    // 입력
-    // 12345
+    // const height = prompt('키를 입력하세요.');
+    // let sorted = " ";
 
-    // 출력
-    // 54321
+    // sorted = height
+    //     .split(" ")
+    //     .sort(function(a,b){
+    //         return a - b;
+    //     })
+    //     join(" ");
 
-    const inputText = prompt('숫자를 입력하시오');
-    const reverse = inputText.split('').reverse().join('');
+    //     if (sorted === height){
+    //         console.log('Yes');
+    //     } else {
+    //         console.log('NO');
+    //     }
 
-    console.log(reverse)
+    const unsorted = prompt('키를 입력하세요');
+    let sorted = "";
 
+    sorted = unsorted
+    .split(" ")
+    .sort(function(a, b) {
+        return a - b;
+    })
+    .join(" ");
+
+    if (unsorted === sorted) {
+    console.log("Yes");
+    } else {
+    console.log("No");
+    }
     
 
 </script>
