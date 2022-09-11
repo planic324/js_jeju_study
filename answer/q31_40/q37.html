@@ -20,13 +20,13 @@
     </div>
 </body>
 <script>
-    const name = prompt('원범 원범 혜원 혜원 혜원 혜원 유진 유진').split(' ');
-    let result = {};
+    const name = prompt('원범 원범 혜원 혜원 혜원 혜원 유진 유진').split(' '); // 입력값 지정
+    let result = {}; // 배열을 위한 변수
     let winner = "";
 
-    for (let index in name){
-        let val = name[index];
-        result[val] = result[val] === undefined ? 1 : result[val] = result[val] + 1;
+    for (let index in name){ // for in문을 이용하여 name의 내용을 반복함 
+        let val = name[index]; // val라는 배열을 만듬
+        result[val] = result[val] === undefined ? 1 : result[val] = result[val] + 1; // 이걸 모르겠음
     }
 
     winner = Object.keys(result).reduce(function(a, b){
