@@ -8,32 +8,21 @@
 </head>
 <body>
     <div class="qustion_box">
-        <h3 class="main_text">문제37 : 반장선거</h3>
+        <h3 class="main_text">문제38 : 호준이의 아르바이트</h3>
         <p class="sub_text">
             
         </p>
         <xmp>
-            학생들이 뽑은 후보들을 입력받으면 뽑힌 학생의 이름과 받은 표 수를 출력하는 프로그램을 작성하시오
+            학생들의 점수를 공백으로 구분하여 입력을 받고 사탕을 받을 학생의 수를 출력하세요.
 
-            원범 원범 혜원 혜원 혜원 혜원 유진 유진
+            // 입력 : 97 86 75 66 55 97 85 97 97 95
+            // 출력 : 6
         </xmp>
     </div>
 </body>
 <script>
-    const name = prompt('원범 원범 혜원 혜원 혜원 혜원 유진 유진').split(' ');
-    let result = {};
-    let winner = "";
+   
 
-    for (let index in name){
-        let val = name[index];
-        result[val] = result[val] === undefined ? 1 : result[val] = result[val] + 1;
-    }
-
-    winner = Object.keys(result).reduce(function(a, b){
-        return result[a] > result[b] ? a : b
-    });
-
-    console.log(`${winner}가 총 ${result[winner]}표로 당선이 되었습니다.`)
 
 </script>
 </html>
