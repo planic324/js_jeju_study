@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제39 : 오타 수정하기</h3>
+        <p class="sub_text">
+            Javascript 에서 string을 replaceAll 하는 방법
+        </p>
+        <xmp>
+            문장이 입력되면 모든 q를 e로 바꾸는 프로그램을 작성해 주세요.
+        </xmp>
+    </div>
+</body>
+<script>
+   // 1. 정규식 이용
+   const word = prompt('단어를 입력해주세요.');
+
+   console.log(word.replace(/q/gi, 'e'));
+
+   // 2. 함수 이용
+   
+    function replaceAll(str, searchStr, replaceStr) {
+        return str.split(searchStr).join(replaceStr);
+    }
+
+    console.log(replaceAll(word, "q", "e"))
+    
+
+</script>
+</html>
