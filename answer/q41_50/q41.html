@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="qustion_box">
+        <h3 class="main_text">문제41 : 소수판별</h3>
+        <p class="sub_text">
+            숫자가 주어지면 소수인지 아닌지 판별하는 프로그램을 작성하시오
+        </p>
+        <xmp>
+            
+        </xmp>
+    </div>
+</body>
+<script>
+
+const num = prompt('숫자 입력.');
+
+function check_prime(num) {
+  for (let i=2; i<num; i++) {
+    const result = num % i;
+    if (result === 0) {
+      console.log('NO');
+      return false;
+    }
+  }
+  if (num === 1) {
+    console.log('NO');
+    return;
+  }
+  console.log('YES');
+}
+
+check_prime(num);
+
+
+    
+
+</script>
+</html>
